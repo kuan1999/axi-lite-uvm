@@ -1,0 +1,96 @@
+# ====================================================================
+# Vivado project / build artifacts
+# ====================================================================
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.wcfg
+*.backup.jou
+*.backup.log
+vivado_*.backup.*
+vivado.log
+vivado.jou
+vivado_pid*.str
+vivado_pid*.debug
+
+# Vivado project directories
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.gen/
+
+# XSim
+xsim.dir/
+webtalk.log
+webtalk.jou
+webtalk*.backup.jou
+webtalk*.backup.log
+*.wdb
+*.pb
+
+# IP generation
+.hbs/
+hd_visual/
+
+# ====================================================================
+# Local simulation runs (user-defined per repo layout)
+# ====================================================================
+sim/
+!sim/.gitkeep
+
+# ====================================================================
+# Synthesis / implementation outputs
+# ====================================================================
+*.bit
+*.ltx
+*.mcs
+*.prm
+*.dcp
+*.edif
+*.edf
+*.ngc
+*.bif
+
+# ====================================================================
+# macOS
+# ====================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# ====================================================================
+# Editors
+# ====================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# ====================================================================
+# Python (for HIL scripts later)
+# ====================================================================
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# ====================================================================
+# Misc
+# ====================================================================
+*.tmp
+*.orig
+*.rej
