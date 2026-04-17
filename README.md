@@ -19,7 +19,9 @@ The ARM Cortex-A9 processor on the Zynq PS drives an AXI-Lite slave on the PL si
 The slave exposes 8 memory-mapped 32-bit registers used to configure a PWM
 generator (period, duty cycle) and read back status.
 
-'''ARM PS (Cortex-A9)
+
+```
+ARM PS (Cortex-A9)
 │
 │  AXI-Lite bus
 ▼
@@ -38,7 +40,8 @@ generator (period, duty cycle) and read back status.
 └─────────┬───────────┘
 │
 ▼
-PWM output'''
+PWM output
+```
 
 ## Register Map (draft)
 
@@ -63,12 +66,13 @@ Detailed design notes will be added to `docs/` as each phase progresses.
 
 ## Tools
 
-- Xilinx Vivado 2024.x
+- Xilinx Vivado 2025.x
 - SystemVerilog
 - Target board: Zybo Z7-20 (Zynq-7000, Artix-7 PL)
 
 ## Repository Layout
-'''
+
+```
 axi-lite-uvm/
 ├── rtl/            # RTL source
 ├── tb_directed/    # Directed testbench (Phase 1)
@@ -77,7 +81,8 @@ axi-lite-uvm/
 ├── constraints/    # XDC files
 ├── scripts/        # Vivado TCL scripts
 └── sim/            # Local simulation runs (gitignored)
-'''
+```
+
 ## Author
 
 Hsiang-Yung (William) Kuan — M.Eng. CS, Oregon State University
