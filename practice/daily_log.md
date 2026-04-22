@@ -19,3 +19,13 @@
 - Icarus Verilog + GTKWave 裝好
 - VS Code workspace 開 axi-lite-uvm
 - Copilot inline suggestions 關掉
+
+## Day 2 — 4-to-1 Mux
+- 兩版本(case + if-else)通過 simulation
+- 卡點:
+  - 2'b00 和 2b'00 搞反(單引號位置)
+  - elsif 不存在,SV 用 else if
+  - case 的 default: 後面有冒號
+  - case 結束用 endcase 不是 end
+  - module 名字忘了改
+- 判定:需複習(被點錯 3 次關鍵 syntax)

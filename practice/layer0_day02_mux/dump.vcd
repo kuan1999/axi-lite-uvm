@@ -1,0 +1,85 @@
+$date
+	Wed Apr 22 15:04:06 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_mux $end
+$var wire 8 ! y_ifelse [7:0] $end
+$var wire 8 " y_case [7:0] $end
+$var reg 8 # d0 [7:0] $end
+$var reg 8 $ d1 [7:0] $end
+$var reg 8 % d2 [7:0] $end
+$var reg 8 & d3 [7:0] $end
+$var reg 2 ' sel [1:0] $end
+$scope module dut_a $end
+$var wire 8 ( d0 [7:0] $end
+$var wire 8 ) d1 [7:0] $end
+$var wire 8 * d2 [7:0] $end
+$var wire 8 + d3 [7:0] $end
+$var wire 2 , sel [1:0] $end
+$var reg 8 - y [7:0] $end
+$upscope $end
+$scope module dut_b $end
+$var wire 8 . d0 [7:0] $end
+$var wire 8 / d1 [7:0] $end
+$var wire 8 0 d2 [7:0] $end
+$var wire 8 1 d3 [7:0] $end
+$var wire 2 2 sel [1:0] $end
+$var reg 8 3 y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10101010 3
+b0 2
+b11011101 1
+b11001100 0
+b10111011 /
+b10101010 .
+b10101010 -
+b0 ,
+b11011101 +
+b11001100 *
+b10111011 )
+b10101010 (
+b0 '
+b11011101 &
+b11001100 %
+b10111011 $
+b10101010 #
+b10101010 "
+b10101010 !
+$end
+#10000
+b10111011 "
+b10111011 -
+b10111011 !
+b10111011 3
+b1 '
+b1 ,
+b1 2
+#20000
+b11001100 "
+b11001100 -
+b11001100 !
+b11001100 3
+b10 '
+b10 ,
+b10 2
+#30000
+b11011101 "
+b11011101 -
+b11011101 !
+b11011101 3
+b11 '
+b11 ,
+b11 2
+#40000
