@@ -29,3 +29,27 @@
   - case 結束用 endcase 不是 end
   - module 名字忘了改
 - 判定:需複習(被點錯 3 次關鍵 syntax)
+# 2026/04/23 Thu
+
+## Day 3 — 8-bit Register (Sync Reset + Enable)
+- Sync reset:sensitivity list 只有 posedge clk
+- 踩坑:port 沒寫 logic、q <= q 多餘、rst_n==0 寫成 !rst_n 更標準
+- Simulation 6 case 全對
+- 判定:需複習
+
+## Day 4 — 8-bit Counter (Async Reset + Sync Clear + Enable)
+- Async reset:sensitivity list = posedge clk or negedge rst_n
+- 踩坑:cnt + 1 寫法有 width mismatch (應該 cnt + 8'd1)
+- Simulation 8 case 全對,包含 async reset mid-clock 驗證
+- Bonus:debug 過 testbench timing bug(#3 rst_n=0 沒等 propagation)
+- 判定:一次過(近)
+
+## Today's outstanding
+- Pong Chu Ch 2 沒讀(推到 Fri)
+- ITRI TX 釐清沒做(推到 Fri)
+- 投遞沒做(推到 Fri)
+
+## Weekly pattern note
+- 今天上午幾乎白天浪費掉(朋友事情)
+- 17:30-19:30 兩小時補上 2 題 RTL drills
+- 策略:Layer 0 這種沒 external deadline 的工作,要排在一天的起點,不是「之後再做」
