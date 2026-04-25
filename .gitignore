@@ -94,3 +94,22 @@ venv/
 *.tmp
 *.orig
 *.rej
+
+# ====================================================================
+# Icarus Verilog build artifacts
+# ====================================================================
+*.vvp
+*.vcd
+# iverilog default output (no extension)
+practice/**/sim
+practice/**/traffic_fsm
+practice/**/adder_*
+practice/**/mux_*
+practice/**/reg8
+practice/**/counter8
+
+# ====================================================================
+# Layer 0 practice (local-only learning material)
+# ====================================================================
+practice/
+
